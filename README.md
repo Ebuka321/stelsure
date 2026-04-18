@@ -2,6 +2,10 @@
 
 StelSure is a decentralized parametric crop coverage dashboard for StellarDAO. Users buy a fixed policy with XLM, a weather oracle emits rainfall events, and automated smart contract distribution settles eligible payouts without a manual claim flow.
 
+## License
+
+MIT License
+
 ## Product
 
 - App name: `StelSure`
