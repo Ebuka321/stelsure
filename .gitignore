@@ -14,3 +14,5 @@ apps/web/.env.local
 .env
 .DS_Store
 .vercel
+dist/
+.env.local
