@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // PolicyManager handles crop insurance policies on Stellar
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.20;
 
 contract PolicyManager {
     error PolicyManager__IncorrectPremium();
