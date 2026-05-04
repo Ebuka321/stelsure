@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// Deployment script for StelSure contracts
 pragma solidity ^0.8.19;
 
 import {Script} from "forge-std/Script.sol";
