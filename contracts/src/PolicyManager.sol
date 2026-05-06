@@ -9,6 +9,7 @@ contract PolicyManager {
     error PolicyManager__PolicyInactive();
     error PolicyManager__InsufficientVaultFunds();
     error PolicyManager__TransferFailed();
+    error PolicyManager__InvalidThreshold();
     error PolicyManager__ZeroAddress();
 
     struct Policy {
