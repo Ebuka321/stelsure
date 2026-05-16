@@ -21,6 +21,7 @@ export function PolicyForm({ account, onSuccess }: PolicyFormProps) {
     startTransition(async () => {
       try {
         if (!account) {
+          throw new Error("Wallet not connected. Please connect your wallet.");
           throw new Error("Connect a wallet before creating a policy.");
         }
         if (!appEnv.policyManagerAddress) {
