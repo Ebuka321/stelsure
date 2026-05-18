@@ -1,0 +1,24 @@
+{
+  "name": "stelsure",
+  "private": true,
+  "packageManager": "pnpm@10.10.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "corepack pnpm --filter web dev",
+    "build": "corepack pnpm --filter web build",
+    "lint": "corepack pnpm --filter web lint",
+    "test:contracts": "forge test",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}

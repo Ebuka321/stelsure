@@ -1,0 +1,15 @@
+.git
+.git.*
+.git-*
+.next
+.vercel/output
+node_modules
+apps/web/.next
+apps/web/node_modules
+apps/web/tsconfig.tsbuildinfo
+contracts/cache
+contracts/out
+cache
+artifacts
+broadcast
+coverage

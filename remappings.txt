@@ -1,0 +1,1 @@
+@somnia-chain/reactivity-contracts/=contracts/lib/somnia-reactivity-contracts/

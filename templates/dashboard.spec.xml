@@ -1,0 +1,61 @@
+<screen name="StelSureDashboard" platform="web" version="1.0">
+  <intent>Allow a user to buy crop insurance, observe rainfall and payout updates in real time, and allow the owner to run deterministic demo admin actions.</intent>
+  <layout>
+    <region name="hero">
+      <text role="title">Autonomous crop insurance</text>
+      <text role="subtitle">Buy once. If rainfall crosses the threshold, StelSure settles automatically.</text>
+      <action id="connect-wallet" kind="button">Connect wallet</action>
+    </region>
+    <region name="summary-grid">
+      <component type="card" id="policy-terms">
+        <text role="label">Fixed policy terms</text>
+        <text role="body">Premium 0.1 XLM, payout 1 XLM, threshold 100 mm.</text>
+      </component>
+      <component type="card" id="rainfall-feed">
+        <text role="label">Live rainfall</text>
+        <text role="value">Current rainfall value and threshold status.</text>
+      </component>
+      <component type="card" id="vault-status">
+        <text role="label">Vault status</text>
+        <text role="value">Remaining payout capacity and owner funding state.</text>
+      </component>
+    </region>
+    <region name="primary-actions">
+      <component type="card" id="buy-policy-card" state="default">
+        <text role="label">Buy policy</text>
+        <text role="body">Create a fixed one-shot crop policy.</text>
+        <action id="buy-policy" kind="button">Pay 0.1 XLM</action>
+      </component>
+      <component type="card" id="admin-panel" state="owner-only">
+        <text role="label">Admin actions</text>
+        <action id="fund-vault" kind="button">Prefund vault</action>
+        <action id="trigger-weather" kind="button">Emit rainfall update</action>
+      </component>
+    </region>
+    <region name="lists">
+      <component type="table" id="policy-list">
+        <text role="label">Policies</text>
+      </component>
+      <component type="table" id="payout-history">
+        <text role="label">Payout history</text>
+      </component>
+      <component type="card" id="ai-explanation">
+        <text role="label">AI explanation</text>
+        <text role="body">Human-readable summary of the last payout event or fallback copy.</text>
+      </component>
+    </region>
+  </layout>
+  <states>
+    <state name="wallet-disconnected" />
+    <state name="wallet-connected-empty" />
+    <state name="purchase-pending" />
+    <state name="purchase-success" />
+    <state name="rainfall-normal" />
+    <state name="rainfall-threshold-breached" />
+    <state name="payout-success" />
+    <state name="owner-admin" />
+    <state name="ai-success" />
+    <state name="ai-fallback" />
+    <state name="error" />
+  </states>
+</screen>

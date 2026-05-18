@@ -1,0 +1,16 @@
+node_modules
+.next
+.vercel
+out
+dist
+coverage
+*.tsbuildinfo
+broadcast
+cache
+artifacts
+lib
+docs/
+apps/web/.env.local
+.env
+.DS_Store
+.vercel
