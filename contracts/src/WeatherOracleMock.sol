@@ -6,6 +6,7 @@ contract WeatherOracleMock {
 
     address public owner;
     uint256 public lastRainfall;
+    uint256 public lastUpdatedTimestamp;
 
     event WeatherUpdated(uint256 rainfall);
 
