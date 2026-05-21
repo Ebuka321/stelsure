@@ -9,6 +9,7 @@ contract WeatherOracleMock {
     uint256 public lastUpdatedTimestamp;
 
     event WeatherUpdated(uint256 rainfall);
+    event WeatherTimestampUpdated(uint256 timestamp);
 
     modifier onlyOwner() {
         if (msg.sender != owner) {
