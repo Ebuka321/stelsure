@@ -24,6 +24,7 @@ export function AdminPanel({ account, onSuccess, onWeatherSubmitted }: AdminPane
     Boolean(account) && Boolean(appEnv.ownerAddress) && account?.toLowerCase() === appEnv.ownerAddress.toLowerCase();
 
   function prefundVault() {
+    if (!confirm("Are you sure you want to fund the vault?")) return;
     startTransition(async () => {
       try {
         if (!account || !isOwner) {
