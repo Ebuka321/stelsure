@@ -7,6 +7,7 @@ type ModalProps = {
   title: string;
   description?: string;
   tone?: "default" | "error" | "success";
+  size?: "sm" | "md" | "lg";
   onClose: () => void;
   children?: React.ReactNode;
 };
