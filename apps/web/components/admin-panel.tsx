@@ -15,7 +15,7 @@ type AdminPanelProps = {
 };
 
 export function AdminPanel({ account, onSuccess, onWeatherSubmitted }: AdminPanelProps) {
-  const [rainfall, setRainfall] = useState("120");
+  const [rainfall, setRainfall] = useState("150");
   const [fundAmount, setFundAmount] = useState("2");
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
