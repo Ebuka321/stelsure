@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// ReactiveArbitrator handles automated payout distribution
 pragma solidity ^0.8.19;
 
 import {SomniaEventHandler} from "@somnia-chain/reactivity-contracts/contracts/SomniaEventHandler.sol";
