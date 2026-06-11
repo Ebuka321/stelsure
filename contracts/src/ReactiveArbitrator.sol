@@ -8,6 +8,7 @@ import {PolicyManager} from "./PolicyManager.sol";
 contract ReactiveArbitrator is SomniaEventHandler {
     error ReactiveArbitrator__UnexpectedEmitter(address emitter);
     error ReactiveArbitrator__ThresholdMismatch(uint256 threshold);
+    error ReactiveArbitrator__ZeroPayout();
 
     PolicyManager public immutable policyManager;
     address public immutable weatherOracle;
