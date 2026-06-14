@@ -38,7 +38,7 @@ export function PolicyList({ policies, highlightedPolicyId, transitionMs }: Poli
                 <div className="policy-meta">
                   <div className="policy-title-row">
                     <strong>{`Policy #${policy.id + 1}`}</strong>
-                    <span className={`table-badge ${policy.active ? "active" : "settled"}`}>
+                    <span className={`table-badge ${policy.active ? "active" : "settled"} ${policy.active ? "" : "inactive"}`}>
                       {policy.active ? "Active" : "Settled"}
                     </span>
                     {policy.id === highlightedPolicyId && transitionMs !== undefined ? (
