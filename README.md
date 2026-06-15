@@ -1,5 +1,8 @@
 # StelSure
 
+[![CI](https://github.com/Ebuka321/stelsure/actions/workflows/ci.yml/badge.svg)](https://github.com/Ebuka321/stelsure/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 StelSure is a decentralized parametric crop coverage dashboard for StellarDAO. Users buy a fixed policy with XLM, a weather oracle emits rainfall events, and automated smart contract distribution settles eligible payouts without a manual claim flow.
 
 ## License
