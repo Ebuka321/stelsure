@@ -12,7 +12,8 @@
     "build": "corepack pnpm --filter web build",
     "lint": "corepack pnpm --filter web lint",
     "test:contracts": "forge test",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "next": "^15.2.0",
