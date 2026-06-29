@@ -1096,3 +1096,29 @@ code,
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.4rem 0.6rem;
+  background: var(--card-strong);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  font-size: 0.72rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
