@@ -23,6 +23,7 @@ contract PolicyManager {
     uint256 public constant PREMIUM = 0.1 ether;
     uint256 public constant PAYOUT = 1 ether;
     uint256 public constant THRESHOLD = 100;
+    uint256 public constant MAX_POLICIES = 1000;
 
     address public owner;
     address public reactiveArbitrator;
