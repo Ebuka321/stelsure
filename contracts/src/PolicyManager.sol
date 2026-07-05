@@ -64,6 +64,9 @@ contract PolicyManager {
             revert PolicyManager__IncorrectPremium();
         }
 
+        if (policies.length >= MAX_POLICIES) {
+            revert PolicyManager__MaxPoliciesReached();
+        }
         policyId = policies.length;
         policies.push(
             Policy({user: msg.sender, premium: PREMIUM, payout: PAYOUT, threshold: THRESHOLD, active: true})
