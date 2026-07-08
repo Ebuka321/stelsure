@@ -4,6 +4,7 @@ export function AIExplanationPanel({ explanation }: { explanation: Explanation |
   return (
     <div className="card wide-card explanation-card">
       {!explanation ? (
+        <div className="loading-spinner" />
         <p className="inline-message">The next payout event will generate an explanation here.</p>
       ) : (
         <div className="explanation-copy">
