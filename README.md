@@ -23,6 +23,13 @@ MIT License
 - `templates` XML UI specification for the dashboard
 - `scripts` TypeScript utility for subscription setup
 
+## Architecture
+
+The application follows a modular architecture with clear separation of concerns:
+- Smart contracts handle policy management and automated settlements
+- React components provide a responsive dashboard interface
+- Hooks encapsulate business logic and state management
+
 ## Core Flow
 
 1. A user creates a policy by paying `0.1 XLM`.
